@@ -1,7 +1,29 @@
 {
-  "name": "workerThreads",
+  "name": "workerthreads",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wexxew/WorkerThreads.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wexxew/WorkerThreads/issues"
+  },
+  "homepage": "https://github.com/wexxew/WorkerThreads#readme",
   "version": "1.0.0",
   "dependencies": {
     "debug": "^4.1.1"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "multithreading"
+  ],
+  "author": "wexxew",
+  "license": "ISC",
+  "description": ""
 }
