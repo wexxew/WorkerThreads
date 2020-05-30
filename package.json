@@ -1,5 +1,5 @@
 {
-  "name": "workerthreads",
+  "name": "@wexxew/workerthreads",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wexxew/WorkerThreads.git"
