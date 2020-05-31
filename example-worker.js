@@ -3,12 +3,20 @@ const { WorkerThread } = require('./index')
 
 const wrk = new WorkerThread()
 async function main() {
-    console.log( await wrk.sendCommand() )
+    let result
+
+    try {
+        result = await wrk.sendCommand()
+    } catch (e) {
+        throw e
+    }
+
+    console.log( result )
+    process.exit( 0 )
 }
 
 main()
     .catch( e => {
         console.log( `Got an error: ${e.message}` )
+        process.exit(1)
     } )
-
-setTimeout( () => process.exit( 0 ), 3000 )
